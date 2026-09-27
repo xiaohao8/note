@@ -1,0 +1,46 @@
+# Netlify 部署配置
+# 纯静态站点：不需要构建命令，也不要安装依赖。
+
+[build]
+  publish = "."
+  command = ""
+
+# 关掉 Netlify 自带的资源后处理：本页是你的线上交付品，
+# 自动「优化」可能改动 css/js 内容，出问题不好核对。
+[build.processing]
+  skip_processing = true
+
+# ---------- 安全响应头 ----------
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "SAMEORIGIN"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "geolocation=(), microphone=(), camera=()"
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+# 静态资源单独给一小段缓存，改完文件最多 10 分钟全网生效
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=600, must-revalidate"
+
+# ---------- 重定向 ----------
+# 无扩展名的漂亮 URL
+[[redirects]]
+  from = "/privacy"
+  to = "/privacy.html"
+  status = 301
+
+# 短链：/get 直达下载区
+[[redirects]]
+  from = "/get"
+  to = "/index.html#download"
+  status = 301
+
+# 兜底：未匹配的路径交给 404
+[[redirects]]
+  from = "/*"
+  to = "/404.html"
+  status = 404

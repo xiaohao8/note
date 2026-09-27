@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>隐私政策 — Desktop-note</title>
+<meta name="description" content="Desktop-note 的隐私政策：应用纯本地运行，不收集、不上传任何笔记内容与个人信息，无需账号、无需联网。">
+<meta name="robots" content="index,follow">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+<link rel="icon" type="image/png" href="assets/img/favicon.png?v=2">
+<link rel="apple-touch-icon" href="assets/img/favicon.png">
+<link rel="canonical" href="https://example.com/privacy.html">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Desktop-note">
+<meta property="og:title" content="隐私政策 — Desktop-note">
+<meta property="og:description" content="纯本地运行，不收集、不上传任何笔记内容与个人信息。">
+<meta property="og:url" content="https://example.com/privacy.html">
+<meta property="og:image" content="https://example.com/assets/img/og-cover.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://example.com/assets/img/og-cover.png">
+
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">跳到主要内容</a>
+
+<header class="nav" id="nav">
+  <nav class="nav-inner" aria-label="主导航">
+    <a class="brand" href="index.html">
+      <img class="brand-mark" src="assets/img/logo.png" alt="" width="26" height="26">
+      <span>Desktop-note</span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html#features">功能</a>
+      <a href="index.html#local">本地优先</a>
+      <a href="index.html#specs">规格</a>
+      <a href="index.html#download">下载</a>
+      <span class="nav-cta"><a href="index.html#download">获取应用</a></span>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+  <div class="container container-narrow doc">
+    <header class="doc-head">
+      <p class="eyebrow">法律条款</p>
+      <h1>隐私政策</h1>
+      <p class="doc-updated">最近更新：2026 年 9 月 27 日 · 适用于 Desktop-note 1.0.0 及后续版本</p>
+    </header>
+
+    <div class="doc-body">
+      <aside class="doc-toc">
+        <h2>目录</h2>
+        <ol>
+          <li><a href="#summary">一句话说明</a></li>
+          <li><a href="#collect">我们收集哪些信息</a></li>
+          <li><a href="#local-data">本地存储的数据</a></li>
+          <li><a href="#notification">系统通知</a></li>
+          <li><a href="#store">Microsoft Store 版本</a></li>
+          <li><a href="#website">官网与托管</a></li>
+          <li><a href="#third-party">第三方服务</a></li>
+          <li><a href="#children">儿童隐私</a></li>
+          <li><a href="#security">数据安全与留存</a></li>
+          <li><a href="#rights">你的权利</a></li>
+          <li><a href="#changes">政策更新</a></li>
+          <li><a href="#contact">联系我们</a></li>
+        </ol>
+      </aside>
+
+      <div class="doc-content">
+        <section id="summary">
+          <h2>1. 一句话说明</h2>
+          <p>Desktop-note <strong>不会收集你的笔记内容，也不会收集任何可以识别到你个人的信息</strong>。应用在你的电脑上独立运行，没有账号体系，没有服务端，也没有用于统计使用行为的埋点代码。</p>
+          <div class="callout">
+            <strong>如果你只想知道结论</strong>
+            <p>写下的每一个字都只存在于你自己的硬盘上。我们看不到，也拿不到。</p>
+          </div>
+        </section>
+
+        <section id="collect">
+          <h2>2. 我们收集哪些信息</h2>
+          <p>我们不主动收集任何信息。具体来说，Desktop-note 在运行过程中<strong>不会</strong>：</p>
+          <ul>
+            <li>上传笔记正文、标题、标签、待办清单或提醒内容</li>
+            <li>要求注册账号、绑定手机号或邮箱</li>
+            <li>读取通讯录、相册、位置、麦克风、摄像头等敏感资源</li>
+            <li>嵌入广告 SDK 或用于广告归因的标识符</li>
+            <li>采集崩溃堆栈、使用时长、点击路径等行为数据</li>
+          </ul>
+        </section>
+
+        <section id="local-data">
+          <h2>3. 本地存储的数据</h2>
+          <p>你创建的所有内容，连同偏好设置，都以 <strong>JSON 明文文件</strong>保存在当前 Windows 用户的应用数据目录中：</p>
+          <ul>
+            <li><code>%APPDATA%\Desktop-note\notes\</code> — 每条笔记一个独立文件</li>
+            <li><code>%APPDATA%\Desktop-note\index.json</code> — 索引</li>
+            <li><code>%APPDATA%\Desktop-note\settings.json</code> — 界面语言、主题、圆角等偏好</li>
+          </ul>
+          <p>这些文件只有登录到本机 Windows 账户的用户才能读取。卸载应用时<strong>不会删除</strong>它们，你需要手动移除上述目录才能彻底清理。也正因为是明文，你可以随时用任何文本编辑器打开、导出或备份。</p>
+        </section>
+
+        <section id="notification">
+          <h2>4. 系统通知</h2>
+          <p>当你为某条笔记设置了时间提醒，到达时间后应用会通过 Windows 通知系统在本地弹出提示，并在应用内显示提醒条、把相关窗口移到最前。<strong>通知在设备本地生成</strong>，不会经过我们的服务器——因为我们没有服务器。</p>
+          <p>是否允许通知弹出，由 Windows「设置 → 系统 → 通知」统一管理，你可以随时关闭。</p>
+        </section>
+
+        <section id="store">
+          <h2>5. Microsoft Store 版本</h2>
+          <p>如果你是通过 Microsoft Store 安装的 Desktop-note，那么<strong>Microsoft 作为分发方</strong>，可能会收集该应用的安装次数、崩溃摘要与设备兼容性等遥测信息。这部分数据处理遵循 <a href="https://go.microsoft.com/fwlink/?LinkId=521839" target="_blank" rel="noopener">Microsoft 隐私声明</a>，不由我们控制，也不包含你的笔记内容。</p>
+          <p>你也可以在 Windows「设置 → 隐私和安全性 → 诊断和反馈」中调整相关开关。</p>
+        </section>
+
+        <section id="website">
+          <h2>6. 官网与托管</h2>
+          <p>你当前浏览的 Desktop-note 官网是一个纯静态站点，由 Netlify 提供 CDN 分发。<strong>我们没有在页面中植入统计脚本、广告 pixels 或第三方 cookie</strong>，不使用 Cookie 追踪你的浏览行为。</p>
+          <p>出于安全与运维需要，托管方 Netlify 在处理请求时会临时生成服务器日志，其中可能包含 IP 地址、User-Agent 与访问时间。这类日志由托管方按自身政策留存，我们不会将其用于用户画像。</p>
+        </section>
+
+        <section id="third-party">
+          <h2>7. 第三方服务</h2>
+          <p>应用本体<strong>不包含</strong>任何第三方 SDK、分析工具或广告组件。官网未接入 Google Analytics、Meta Pixel 或任何类似的统计服务。若未来引入会改变上述承诺的服务，我们会先更新本政策，并在应用内提前告知。</p>
+        </section>
+
+        <section id="children">
+          <h2>8. 儿童隐私</h2>
+          <p>Desktop-note 面向普通大众，无意收集 13 岁以下儿童的个人信息。由于应用本身不收集任何信息，这一过程也不会发生。如你是监护人并认为孩子向我们提供了个人信息，请通过下方邮箱联系我们。</p>
+        </section>
+
+        <section id="security">
+          <h2>9. 数据安全与留存</h2>
+          <p>由于数据从未离开你的设备，保护的主体责任在你的操作系统层面：建议启用 Windows 账户密码、BitLocker 磁盘加密，并保管好自己的设备。</p>
+          <ul>
+            <li>删除到回收站的笔记会保留 <strong>30 天</strong>，之后由应用自动清理</li>
+            <li>清理后的数据会被真正删除，不留副本</li>
+            <li>我们不持有你的任何数据，因此也无从「删除你在我们服务器上的数据」</li>
+          </ul>
+        </section>
+
+        <section id="rights">
+          <h2>10. 你的权利</h2>
+          <p>无论你身处何地，你对自己设备上的笔记拥有完整的访问、更正、导出与删除权利，这些操作在应用内即可完成，无需向我们提出申请。</p>
+          <p>若你所在地区适用 GDPR、CCPA 等法规，由于我们不作为数据控制者持有你的个人数据，因此不存在可供查询、更正或删除的记录。若你有疑问，欢迎与我们联系。</p>
+        </section>
+
+        <section id="changes">
+          <h2>11. 政策更新</h2>
+          <p>当我们调整数据处理方式时，会更新本页面顶部的「最近更新日期」，并在必要时于应用内发布提示。重大变更会以更醒目的方式告知你。</p>
+        </section>
+
+        <section id="contact">
+          <h2>12. 联系我们</h2>
+          <p>关于本隐私政策的任何疑问、意见或请求，都可以发送邮件到 <a href="mailto:hello@example.com">hello@example.com</a>，我们会在合理时间内回复。</p>
+        </section>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-cols">
+      <div>
+        <h5>产品</h5>
+        <ul>
+          <li><a href="index.html">首页</a></li>
+          <li><a href="index.html#features">功能一览</a></li>
+          <li><a href="index.html#specs">技术规格</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>获取</h5>
+        <ul>
+          <li><a href="index.html#download">下载安装包</a></li>
+          <li><a href="https://apps.microsoft.com/" target="_blank" rel="noopener">Microsoft Store</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>支持</h5>
+        <ul>
+          <li><a href="index.html#specs">常见问题</a></li>
+          <li><a href="mailto:hello@example.com">邮件反馈</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>法律</h5>
+        <ul>
+          <li><a href="privacy.html">隐私政策</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>Copyright © <span data-year>2026</span> Desktop-note. 保留所有权利。</span>
+      <span class="legal-links">
+        <a href="privacy.html">隐私政策</a>
+        <a href="mailto:hello@example.com">联系我们</a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
